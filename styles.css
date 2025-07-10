@@ -39,16 +39,18 @@
 
 .tab {
   border: none;
-  border-radius: 5px;
-  background-color: #ffbf00;
+  border-radius: 5px 5px 0 0;
   margin-top: 2px;
-  margin-bottom: 0;
+  margin-bottom: 5px;
   margin-left:0px;
   margin-right:0px;
   width: 5vw;
   height: 3vh;
   transition: height 0.15s;
-  padding-bottom: 2px;
+  padding-bottom: 5px;
+  background-image: linear-gradient(#ffcf40, 	#ffbf00);
+  position: relative;
+  z-index: 0;
 }
 
 .tab:hover {
@@ -61,7 +63,48 @@
 
 .page{
   margin: 0;
-  background-color: #ffbf00;
+  background-image: linear-gradient(#ffcf40, 	#ffbf00);
   width: 100%;
   border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.infrastructure{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 10px;
+}
+
+.time{
+    background-color: white;
+}
+
+.start{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(206, 206, 206);
+    transition: background-color .1s;
+}
+
+.start:hover{
+    background-color: rgb(175, 175, 175);
+}
+
+.start:active{
+    background-color: gray;
+}
+
+
+.hidden{
+    display: none;
 }

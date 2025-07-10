@@ -9,30 +9,57 @@
 <body>
     <div class="container" style="width: 100%;">
         <div class="titlecard">
+            <p style="font-family: Arial; font-style: italic; font-size: 1.25rem;">A game of...</p>
             <h2 class="titletext">Drunken Thrones</h2>
         </div>
         <div class="game_container">
             <div class="top_display">
                 <p id="total_money">$100 Placeholder</p>
             </div>
-            <div class="tabs" style="display: flex;">
+            <div class="tabs" style="display: flex; margin-bottom: -7px;">
                 <div class="tab_wrap">
                     <div class="tab_container">
-                        <button class="tab">View</button>
+                        <button name="view" class="tab"onclick="loadPage(this);">View</button>
                     </div>
                 </div>
                 <div class="tab_wrap">
                     <div class="tab_container">
-                        <button class="tab">Shop</button>
+                        <button name="shop" class="tab"onclick="loadPage(this);">Shop</button>
+                    </div>
+                </div>
+                <div class="tab_wrap">
+                    <div class="tab_container">
+                        <button name="war" class="tab" onclick="loadPage(this);">War</button>
                     </div>
                 </div>
             </div>
-            <div class="page" id="view">
-                <h1 style="margin-top: -7px;">PLACEHOLDER</h1>
+            <div class="page" id="view" >
+                <h1 align="center">Current Infrastructure</h1>
+                <div class="infrastructure" id="infrastructure">
+                    <p>Production:</p>
+                    <p>Military:</p>
+                </div>
             </div>
-            <div class="page" id="shop">
+            <div class="page hidden" id="shop">
+                <h1 align="center">Shop</h1>
+                <div class="infrastructure" id="infrastructure">
+                    <p>Production:</p>
+                    <p>Military:</p>
+                </div>
+            </div>
+            <div class="page hidden" id="war">
+                <h1 align="center">War</h1>
+                <div style="background-color: white; margin: 10px; padding: 10px; border-radius: 5px;">
+                    <div class="timer" id="timer" style="display: flex;">
+                        <p id="seconds">00</p>
+                        <p>:</p>
+                        <p id="ms">00</p>
+                    </div>
+                    <button class="start">Start Timer</button>
+                </div>
+                
+            </div>
 
-            </div>
         </div>
     </div>
 <script src="index.js"></script>
