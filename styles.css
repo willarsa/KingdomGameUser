@@ -47,6 +47,12 @@
     margin: 5px;
     border: 2px solid #ffbf00; 
     border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .tabs {
