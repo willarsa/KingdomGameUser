@@ -1,0 +1,67 @@
+.titlecard{
+    display: flex; 
+    justify-content: center;
+    align-content: center; 
+    background: linear-gradient(#ffcf40, 	#ffbf00);
+    
+}
+
+.titletext{
+    margin: 0;
+    font-size: 8rem; 
+    font-family: Arial, Helvetica, sans-serif; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.top_display{
+
+}
+
+.tabs {
+  margin-top: 25px;
+  display: flex;
+  gap: .25vw;
+}
+
+.tab_wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+}
+
+.tab_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* anchors the button to the bottom */
+  height: 5vh;
+}
+
+.tab {
+  border: none;
+  border-radius: 5px;
+  background-color: #ffbf00;
+  margin-top: 2px;
+  margin-bottom: 0;
+  margin-left:0px;
+  margin-right:0px;
+  width: 5vw;
+  height: 3vh;
+  transition: height 0.15s;
+  padding-bottom: 2px;
+}
+
+.tab:hover {
+  height: 4vh;
+}
+
+.tab:active {
+  height: 5vh;
+}
+
+.page{
+  margin: 0;
+  background-color: #ffbf00;
+  width: 100%;
+  border-radius: 5px;
+}
