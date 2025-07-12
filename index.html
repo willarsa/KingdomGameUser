@@ -47,26 +47,34 @@
             <div class="page" id="view" >
                 <h1 align="center">Current Infrastructure</h1>
                 <div class="infrastructure" id="infrastructure">
-                    <p>Production:</p>
-                    <p>Military:</p>
+                    <div>
+                        <p>Production:</p>
+                    </div>
+                    <div>
+                        <p>Military:</p>
+                    </div>
+                    
                 </div>
             </div>
             <div class="page hidden" id="shop">
                 <h1 align="center">Shop</h1>
                 <div class="infrastructure" id="infrastructure">
-                    <p>Production:</p>
-                    <p>Military:</p>
+                    <div>
+                        <p>Production:</p>
+                    </div>
+                    <div>
+                        <p>Military:</p>
+                    </div>
                 </div>
             </div>
             <div class="page hidden" id="war">
                 <h1 align="center">War</h1>
-                <div style="background-color: white; margin: 10px; padding: 10px; border-radius: 5px;">
-                    <div class="timer" id="timer" style="display: flex;">
-                        <p id="seconds">00</p>
-                        <p>:</p>
-                        <p id="ms">00</p>
+                <div style="background-color: white; margin: 10px; padding: 10px; border-radius: 5px; width: 20%; margin-top: 5vh; margin-bottom: 5vh; padding-top: 5vh;  padding-bottom: 5vh;">
+                    <div class="timer" id="time" style="display: flex; align-items: center; flex-direction: column;">
+                        <h1 id="timer" style="font-size: 5rem;">60</h1>
+                        <button class="start" onclick="startTimer()" style="padding: 10px; font-size: 2rem;">Start Timer</button>
                     </div>
-                    <button class="start">Start Timer</button>
+                    
                 </div>
                 
             </div>
