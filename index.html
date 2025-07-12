@@ -59,17 +59,35 @@
             <div class="page hidden" id="shop">
                 <h1 align="center">Shop</h1>
                 <div class="infrastructure" id="infrastructure">
-                    <div>
-                        <p>Production:</p>
+                    <p style="font-size: 2rem; font-weight: bold;">Production:</p>
+                    <div style="width: 100%;">
+                        <div id="production_inf" style="width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+                            <div id="farmstead" style="display: flex; flex-direction: column; align-items: center; padding: 10px;">
+                                <img src="images/infrastructure/farm.png" style="width: 100%; border: 2px solid #ffbf00; border-radius: 5px;">
+                                <button class="start" style="padding: 5px; font-size: 1.5rem; margin-top: 3px;">Purchase</button>
+                            </div>
+                            <div id="mill" style="display: flex; flex-direction: column; align-items: center; padding: 10px;">
+                                <img src="images/infrastructure/mine.png" style="width: 100%; border: 2px solid #ffbf00; border-radius: 5px;">
+                                <button class="start" style="padding: 5px; font-size: 1.5rem; margin-top: 3px;">Purchase</button>
+                            </div>
+                            <div id="mine" style="display: flex; flex-direction: column; align-items: center; padding: 10px;">
+                                <img src="images/infrastructure/mill.png" style="width: 100%; border: 2px solid #ffbf00; border-radius: 5px;">
+                                <button class="start" style="padding: 5px; font-size: 1.5rem; margin-top: 3px;">Purchase</button>
+                            </div>
+                            </div>
+                        </div>
                     </div>
+                    <p style="font-size: 2rem; font-weight: bold;">Military:</p>
                     <div>
-                        <p>Military:</p>
+                        <div id="military_inf" style="display: grid;">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="page hidden" id="war">
-                <h1 align="center">War</h1>
-                <div style="background-color: white; margin: 10px; padding: 10px; border-radius: 5px; width: 20%; margin-top: 5vh; margin-bottom: 5vh; padding-top: 5vh;  padding-bottom: 5vh;">
+                <h1 align="center" style="font-size: 5rem;">War</h1>
+                <div style="background-color: white; margin: 10px; padding: 10px; border-radius: 5px; width: 20%; margin-top: 3vh; margin-bottom: 5vh; padding-top: 3vh;  padding-bottom: 5vh;">
                     <div class="timer" id="time" style="display: flex; align-items: center; flex-direction: column;">
                         <h1 id="timer" style="font-size: 5rem;">60</h1>
                         <button class="start" onclick="startTimer()" style="padding: 10px; font-size: 2rem;">Start Timer</button>
